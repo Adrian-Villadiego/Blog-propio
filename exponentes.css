@@ -1,0 +1,169 @@
+/*  General  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+/* Encabezado */
+.header {
+    background: linear-gradient(135deg, #a00000, #ff1a1a);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.4);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/*  Barra de navegacion  */
+.barra {
+    background: #1a1a1a;
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 2px solid #a00000;
+}
+
+.ul__barra {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.li__barra .link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.li__barra .link:hover {
+    background: #a00000;
+}
+
+/*  menu del contenido  */
+.contenido-exponentes {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contenido-exponentes h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #ff4d4d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid-exponentes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.exponente {
+    background: #1c1c1c;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.6);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.exponente:hover {
+    transform: translateY(-8px);
+    background: #222;
+}
+
+.exponente img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+}
+
+.exponente img:hover {
+    transform: scale(1.05);
+}
+
+.exponente h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #ff1a1a;
+}
+
+.exponente p {
+    font-size: 1rem;
+    color: #ddd;
+    text-align: justify;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #a00000;
+    color: #fff8e1;
+    padding: 2rem 1rem;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: left; 
+    flex-wrap: wrap; 
+    gap: 2rem;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.footer-redes h3,
+.footer-horarios h3, .footer-horarios p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.redes-links {
+    display: flex;
+    gap: 25px;
+}
+
+.redes-links a {
+    color: #fff8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.redes-links a:hover {
+    text-decoration: underline;
+    color: #0b0b0b;
+}
+
+.footer-horarios p {
+    margin: 4px 0;
+}

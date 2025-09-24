@@ -1,0 +1,171 @@
+/* General    */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+/* Encabezado */
+.header {
+    background: linear-gradient(135deg, #a00000, #ff1a1a);
+    text-align: center;
+    padding: 2rem 1rem;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.4);
+}
+                                                                                   
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/*  Barra de navegacion  */
+.barra {
+    background: #1a1a1a;
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 2px solid #a00000;
+}
+
+.ul__barra {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.li__barra .link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.li__barra .link:hover {
+    background: #a00000;
+}
+
+/*  Contenido principal  */
+.contenido {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background: #121212;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Cada sección de historia */
+.seccion {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #1c1c1c;
+    border-left: 5px solid #a00000; 
+    border-radius: 6px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.seccion:hover {
+    transform: translateY(-5px);
+    background: #222;
+}
+
+/* Contenedor de imágenes */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap; /* por si en pantallas pequeñas deben bajar */
+}
+
+.imagenes img {
+    width: 45%;
+    max-width: 400px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.imagenes img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.6);
+}
+
+.seccion h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff4d4d;
+    text-align: left;
+}
+
+.seccion p {
+    font-size: 1.05rem;
+    color: #ddd;
+    text-align: justify;
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #a00000;
+    color: #fff8e1;
+    padding: 2rem 1rem;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: left; 
+    flex-wrap: wrap; 
+    gap: 2rem;
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+.footer-redes h3,
+.footer-horarios h3, .footer-horarios p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.redes-links {
+    display: flex;
+    gap: 25px;
+}
+
+.redes-links a {
+    color: #fff8e1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.redes-links a:hover {
+    text-decoration: underline;
+    color: #0b0b0b;
+}
+
+.footer-horarios p {
+    margin: 4px 0;
+}
